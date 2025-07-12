@@ -11,8 +11,13 @@
     --box-shadow: 10px 10px #183d3d;
 }
 
+
 body {
-    font-family: Georgia, serif;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    src: url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
     background-color: var(--main-colour);
     margin-top: 5px;
     margin-bottom: 5px;
@@ -29,7 +34,7 @@ header {
     margin-top: 0 auto;
     text-align: center;
     border-radius: var(--border-radius);
-   
+
 }
 
 footer {
@@ -84,7 +89,7 @@ h3 {
     padding: 10px;
     margin: 10 auto;
     border-radius: var(--border-radius);
-    
+
 }
 
 .project-container {
@@ -102,12 +107,31 @@ h3 {
     border-width: 2px;
     border-color: var(--secondary-colour);
     border-radius: var(--border-radius);
-    
+
     padding: 5px;
     gap: 10px;
     width: 90%;
     margin: 10px;
     box-shadow: var(--box-shadow);
+}
+
+.project-button {
+    background-color: var(--tertiary-colour);
+    color: var(--main-colour);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-medium);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 10px;
+    width: 30%;
+
+}
+
+.project-button:hover {
+    transition-duration: 0.4s;
+    background-color: var(--quinary-colour);
+    box-shadow: 0 9px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 h4 {
