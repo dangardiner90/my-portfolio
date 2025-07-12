@@ -97,7 +97,6 @@
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email">
-            <span class="error" id="emailError"></span>
             <br><br>
             <label for="comments">Let's connect:</label>
             <br>
@@ -105,7 +104,7 @@
             Questions, comments or concerns?
             </textarea>
             <br><br>
-            <button type="submit" class="formbutton">Submit</button>
+            <button type="submit" class="formbutton" id="submit" onclick="validateEmailInput()">Submit</button>
             <br>
             <br>
         </form>

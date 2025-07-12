@@ -1,3 +1,10 @@
+// JavaScript for my website functionality
+// Future updates:
+// - Change displayText() to one function instead of 3
+// - Add scrolling text for about me section (like typing the text in a terminal maybe?)
+
+// Project section text display function:
+// Project 1
 function displayTextOne() {
     var text = document.getElementById("textField1");
     var button = document.getElementById("project1")
@@ -10,6 +17,7 @@ function displayTextOne() {
     }
 };
 
+// Project 2
 function displayTextTwo() {
     var text = document.getElementById("textField2");
     var button = document.getElementById("project2")
@@ -22,6 +30,7 @@ function displayTextTwo() {
     }
 };
 
+// Project 3
 function displayTextThree() {
     var text = document.getElementById("textField3");
     var button = document.getElementById("project3")
@@ -34,3 +43,29 @@ function displayTextThree() {
     }
 };
 
+
+// Form validation:
+
+const form = document.getElementById('registerForm');
+
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email').value;
+
+
+function validateEmailInput() {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (emailRegex.test(emailInput)) {
+        email.textContent = "Thank you";
+    } else {
+        alert("Please enter a valid email address.");
+    }
+}
+
+form.addEventListener('submit', function (event) {
+
+    if (nameInput.value.trim() === '') {
+        alert('Please enter your name');
+    } 
+
+})
