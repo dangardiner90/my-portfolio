@@ -2,6 +2,7 @@
 // Future updates:
 // - Change displayText() to one function instead of 3
 // - Add scrolling text for about me section (like typing the text in a terminal maybe?)
+// - Fix form validation for more consistency
 
 // Project section text display function:
 // Project 1
@@ -56,7 +57,7 @@ function validateEmailInput() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (emailRegex.test(emailInput)) {
-        email.textContent = "Thank you";
+        emailInput.textContent = "Thank you";
     } else {
         alert("Please enter a valid email address.");
     }
