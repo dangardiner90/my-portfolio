@@ -19,12 +19,12 @@
         <br>
         <div class="navbar">
             <a href="#about">About</a>
-            <a href="#projects">Projects</a>
+            <a href="#project">Projects</a>
             <a href="#contact">Contact</a>
         </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
         <h3>About Me:</h3>
         <p>Hello! My name is Daniel, and thank you for taking the time to visit my website!
             I am currently a first year student at Humber Polytechnic studying Computer Programming & Analytics.
@@ -34,11 +34,11 @@
         </p>
     </section>
 
-    <section class="project-container">
+    <section class="project-container" id="project">
         <h3>My Projects:</h3>
 
         <div class="project-item">
-            <button type="button" class="project-button" onclick="displayTextOne()">Project 1</button>
+            <button type="button" class="project-button" id ="project1" onclick="displayTextOne()">Project 1</button>
 
             <p id="textField1" style="display: none;">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
                 faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.
@@ -54,7 +54,7 @@
         </div>
 
         <div class="project-item">
-            <button type="button" class="project-button" onclick="displayTextTwo()">Project 2</button>
+            <button type="button" class="project-button" id="project2" onclick="displayTextTwo()">Project 2</button>
 
             <p id="textField2" style="display: none;">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
                 faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.
@@ -70,7 +70,7 @@
         </div>
 
         <div class="project-item">
-            <button type="button" class="project-button" onclick="displayTextThree()">Project 3</button>
+            <button type="button" class="project-button" id="project3" onclick="displayTextThree()">Project 3</button>
 
             <p id="textField3" style="display: none;">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
                 faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.
@@ -88,7 +88,7 @@
 
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <h3>Contact Me:</h3>
         <form id="registerForm">
             <label for="name">Name:</label>
