@@ -57,6 +57,7 @@ footer {
     border-width: 2px;
     border-radius: var(--border-radius);
     padding: 10px;
+    
 }
 
 .navbar a {
@@ -73,8 +74,10 @@ footer {
 }
 
 .navbar a:hover {
-    background-color: var(--tertiary-colour);
-    font-size: var(--font-size-large);
+    transition-duration: 0.4s;
+    background-color: var(--quinary-colour);
+    box-shadow: 0 9px 8px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 
@@ -132,6 +135,7 @@ h3 {
     transition-duration: 0.4s;
     background-color: var(--quinary-colour);
     box-shadow: 0 9px 8px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 h4 {
@@ -155,16 +159,23 @@ input {
     box-sizing: border-box;
 }
 
-button {
-    padding: 5px;
+.formbutton {
+    background-color: var(--quaternary-colour);
     color: var(--main-colour);
-    background-color: var(--secondary-colour);
-    width: 100px;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-medium);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 10px;
+    width: 30%;
 }
 
-button:hover {
+.formbutton:hover {
+    transition-duration: 0.4s;
+    background-color: var(--quinary-colour);
+    box-shadow: 0 9px 8px 0 rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    background-color: var(--quaternary-colour);
 }
 
 @media only screen and (max-width: 600px) {
