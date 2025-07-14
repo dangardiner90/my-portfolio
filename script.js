@@ -49,24 +49,40 @@ function displayTextThree() {
 
 const form = document.getElementById('registerForm');
 
+// Inputs
 const nameInput = document.getElementById('name');
-const emailInput = document.getElementById('email').value;
+const emailInput = document.getElementById('email');
 
 
-function validateEmailInput() {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// Errors
+const nameError = document.getElementById('nameError');
+const emailError = document.getElementById('emailError');
 
-    if (emailRegex.test(emailInput)) {
-        emailInput.textContent = "Thank you";
-    } else {
-        alert("Please enter a valid email address.");
-    }
-}
+
+
 
 form.addEventListener('submit', function (event) {
+    nameError.textContent = '';
+    emailError.textContent = '';
+    
 
     if (nameInput.value.trim() === '') {
-        alert('Please enter your name');
-    } 
+        nameError.textContent = 'Please enter your name';
+        event.preventDefault();
+    }
+
+    if (emailInput.value.trim() === '') {
+        emailError.textContent = 'Please enter your email';
+        event.preventDefault();
+    } else if (!validateEmail(emailInput.value)) {
+        emailError.textContent = 'Please enter a valid email address';
+        event.preventDefault();
+    }
+
 
 })
+
+function validateEmail(email) {
+    const re = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    return re.test(String(email));
+}
