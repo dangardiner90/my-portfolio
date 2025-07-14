@@ -49,6 +49,49 @@ footer {
     border-radius: var(--border-radius);
 }
 
+.title-bar {
+  padding: 5px 0;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 0.75em;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;
+  background-color: #f8f8f8;
+  background-image: -webkit-linear-gradient(top, #e8e8e8, #bcbbbc);
+  background-image: -moz-linear-gradient(top, #e8e8e8, #bcbbbc);
+  background-image: linear-gradient(top, #e8e8e8, #bcbbbc);
+  box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
+  border-bottom: #6a6a6a 1px solid;
+}
+
+.text-terminal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminal {
+    background:#040D12;
+    width: 60%;
+    padding: 15px 15px 60px;
+    border-radius: 8px;
+    border-top: 20px solid var(--quinary-colour);
+}
+
+.terminal-body {
+    font-size: var(--font-size-medium);
+    color: var(--main-colour);
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+.typed-cursor {
+    color: var(--quinary-colour);
+}
+
+
 .navbar {
     background-color: var(--tertiary-colour);
     display: inline;

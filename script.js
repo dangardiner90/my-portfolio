@@ -2,7 +2,20 @@
 // Future updates:
 // - Change displayText() to one function instead of 3
 // - Add scrolling text for about me section (like typing the text in a terminal maybe?)
-// - Fix form validation for more consistency
+
+var typed = new Typed("#typed", {
+    strings: [
+        'Student',
+        'Security and automation programmer', 
+        'Aspiring software developer'],
+    typeSpeed: 35,
+    startDelay: 500,
+    backdelay: 1000,
+    backSpeed: 35,
+    loop: true,
+    loopCount: 2,
+    showCursor: true,
+});
 
 // Project section text display function:
 // Project 1
