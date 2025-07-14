@@ -1,12 +1,16 @@
 // JavaScript for my website functionality
 // Future updates:
 // - Change displayText() to one function instead of 3
-// - Add scrolling text for about me section (like typing the text in a terminal maybe?)
+// - Add content to Projects section
+// - Implement form submission for comments
 
+
+// typed.js functionality
+// Trying to make the text seem like a terminal
 var typed = new Typed("#typed", {
     strings: [
         'Student',
-        'Security and automation programmer', 
+        'Security and automation programmer',
         'Aspiring software developer'],
     typeSpeed: 35,
     startDelay: 500,
@@ -77,7 +81,7 @@ const emailError = document.getElementById('emailError');
 form.addEventListener('submit', function (event) {
     nameError.textContent = '';
     emailError.textContent = '';
-    
+
 
     if (nameInput.value.trim() === '') {
         nameError.textContent = 'Please enter your name';
