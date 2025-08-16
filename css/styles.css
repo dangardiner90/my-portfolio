@@ -17,7 +17,7 @@ html {
 
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter";
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -165,7 +165,9 @@ h3 {
     display: flex;
     vertical-align: top;
     text-align: left;
+
 }
+
 
 .project-button {
     background-color: var(--tertiary-colour);
@@ -225,6 +227,39 @@ input {
     background-color: var(--quinary-colour);
     box-shadow: 0 9px 8px 0 rgba(0, 0, 0, 0.5);
     cursor: pointer;
+}
+
+.container {
+    width: 50%;
+    background-color: var(--secondary-colour);
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--quinary-colour);
+    box-shadow: 2px 2px 2px 0 black;
+}
+
+.html {
+    width: 90%;
+    background-color: var(--quinary-colour);
+}
+
+.css {
+    width: 80%;
+    background-color: var(--quinary-colour);
+}
+
+.js {
+    width: 65%;
+    background-color: var(--quinary-colour);
+}
+
+.java {
+    width: 40%;
+    background-color: var(--quinary-colour);
 }
 
 @media only screen and (max-width: 600px) {
