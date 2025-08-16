@@ -323,9 +323,10 @@ input {
     }
 
     img {
-        size-adjust: 40%;
         vertical-align: top;
         display: inline-block;
+        max-width: 50%;
+        height: auto;
     }
 
     .project.item {
