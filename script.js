@@ -104,4 +104,3 @@ function validateEmail(email) {
     return re.test(String(email));
 }
 
-import 'animate.css';
