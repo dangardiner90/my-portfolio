@@ -1,7 +1,6 @@
 // JavaScript for my website functionality
 // Future updates:
 // - Change displayText() to one function instead of 3
-// - Add content to Projects section
 // - Implement form submission for comments
 
 
@@ -106,3 +105,5 @@ function validateEmail(email) {
     return re.test(String(email));
 }
 
+const d = new Date();
+document.getElementById("date").innerHTML = d;

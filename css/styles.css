@@ -79,6 +79,20 @@ footer {
     padding: 15px 15px 60px;
     border-radius: 8px;
     border-top: 20px solid var(--quinary-colour);
+    opacity: 0;
+    animation: fadeInAnimation ease 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .terminal-body {
