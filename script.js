@@ -53,10 +53,10 @@ function displayTextThree() {
     var button = document.getElementById("project3")
     if (text.style.display === "none") {
         text.style.display = "block";
-        button.innerHTML = "Project 3 - Show less"
+        button.innerHTML = "My First Website - Show less"
     } else {
         text.style.display = "none";
-        button.innerHTML = "Project 3"
+        button.innerHTML = "My First Website"
     }
 };
 

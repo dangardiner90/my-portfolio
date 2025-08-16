@@ -321,4 +321,14 @@ input {
     body {
         display: block;
     }
+
+    img {
+        size-adjust: 40%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    .project.item {
+        text-align: center;
+    }
 }
