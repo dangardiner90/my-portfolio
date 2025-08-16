@@ -22,7 +22,7 @@ body {
     font-weight: 300;
     font-style: normal;
     src: url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
-    background-color: var(--main-colour);
+    background-color: var(--secondary-colour);
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -162,6 +162,9 @@ h3 {
     width: 90%;
     margin: 10px;
     box-shadow: var(--box-shadow);
+    display: flex;
+    vertical-align: top;
+    text-align: left;
 }
 
 .project-button {

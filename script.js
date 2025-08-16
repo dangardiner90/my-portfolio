@@ -28,10 +28,10 @@ function displayTextOne() {
     var button = document.getElementById("project1")
     if (text.style.display === "none") {
         text.style.display = "block";
-        button.innerHTML = "Project 1 - Show less"
+        button.innerHTML = "Dynamic Blog Project - Show less"
     } else {
         text.style.display = "none";
-        button.innerHTML = "Project 1"
+        button.innerHTML = "Dynamic Blog Project"
     }
 };
 
@@ -41,10 +41,10 @@ function displayTextTwo() {
     var button = document.getElementById("project2")
     if (text.style.display === "none") {
         text.style.display = "block";
-        button.innerHTML = "Project 2 - Show less"
+        button.innerHTML = "Dog Adoption Site - Show less"
     } else {
         text.style.display = "none";
-        button.innerHTML = "Project 2"
+        button.innerHTML = "Dog Adoption Site"
     }
 };
 

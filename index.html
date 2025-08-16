@@ -25,13 +25,13 @@
         <br>
         <br>
         <div class="navbar">
-            <a href="#about">About</a>
-            <a href="#project">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" class="aboutClick">About</a>
+            <a href="#project" class="projectClick">Projects</a>
+            <a href="#contact" class="contactClick">Contact</a>
         </div>
     </header>
 
-    <section class="about" id="about">
+    <div class="about" id="about">
         <h3>About Me:</h3>
         <p>Hello! My name is Daniel, and thank you for taking the time to visit my website!
             I am currently a first year student at Humber Polytechnic studying Computer Programming & Analytics.
@@ -41,41 +41,44 @@
             runner and yoga practitioner. I'm also a huge sci-fi and fantasy nerd, and obsessed with food and
             coffee.
         </p>
-    </section>
+    </div>
 
     <section class="project-container" id="project">
         <h3>My Projects:</h3>
 
         <div class="project-item">
-            <button type="button" class="project-button" id="project1" onclick="displayTextOne()">Project 1</button>
+            <button type="button" class="project-button" id="project1" onclick="displayTextOne()">Dynamic Blog
+                Project</button>
 
-            <p id="textField1" style="display: none;">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-                faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.
-                Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-                Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti
-                sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-                Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque
-                sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
-                Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia
-                integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per
-                conubia nostra inceptos himenaeos.</p>
+            <p id="textField1" style="display: none;">
+                <a href="https://github.com/dangardiner90/dynamic-blog-website">
+                    <img src="images/blog-site.png" alt="blog-site">
+                </a>
+                <br>
+                This is a blog page that is hosted on GitHub, with functionality
+                that allows for the posting, editing, and deleting of posts along with an optional image (max size
+                allowed
+                with local storage is 4MB~). It saves all data within the browser for local data calling and allocation,
+                so it's
+                not exactly a usable blog, since you can really only share with yourself for now, but the functionality
+                mimics that
+                of an actual blog site.
         </div>
 
         <div class="project-item">
-            <button type="button" class="project-button" id="project2" onclick="displayTextTwo()">Project 2</button>
+            <button type="button" class="project-button" id="project2" onclick="displayTextTwo()">Dog Adoption
+                Site</button>
 
-            <p id="textField2" style="display: none;">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-                faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.
-                Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-                Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti
-                sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+            <p id="textField2" style="display: none;">
+                <a href="https://github.com/moteenraza07/dog-adoption-website">
+                    <img src="images/adoption-site.png" alt="adoption-site">
+                </a>
+                <br>
+                This is a website created for a class in which we had to collaborate as a group, effectively using
+                GitHub pull requests and merges, as well as taking on various aspects of the project design. I was in
+                charge of the overall structure and design, and I think the end product looks quite warm and friendly.
 
-                Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque
-                sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
-                Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia
-                integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per
-                conubia nostra inceptos himenaeos.</p>
+            </p>
         </div>
 
         <div class="project-item">
